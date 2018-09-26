@@ -5,13 +5,19 @@ $longform-spacing-horizontal: .5em;
 $longform-font-small: .75em;
 
 $longform-link-color: #39f;
-$longform-link-hover-color: $longform-link-color;
-$longform-link-active-color: $longform-link-color;
+$longform-link-color-hover: $longform-link-color;
+$longform-link-color-active: $longform-link-color;
 
+$longform-border-color: #ddd;
 $longform-border-radius: .25em;
 
 $longform-highlight-color: #f66;
-$longform-highlight-bg: lighten($longform-highlight-color, 50%);
+$longform-highlight-background: lighten($longform-highlight-color, 50%);
 
-$longform-muted-bg: #ddd;
 $longform-muted-color: #666;
+$longform-muted-background: #ddd;
+
+$longform-breakpoint-sm: 640px;
+$longform-breakpoint-md: 1024px;
+$longform-breakpoint-lg: 1200px;
+$longform-breakpoint-xl: 1440px;
