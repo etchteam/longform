@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import Longform from 'longform'
+import Longform from 'longform';
 
 export default class App extends Component {
   render () {
@@ -287,6 +287,6 @@ export default class App extends Component {
 
 
       </Longform>
-    )
+    );
   }
 }

@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './styles/longform.scss';
-
-export default function Longform({
+export default function ImageGrid({
   children,
 }) {
   return (
-    <div className="longform">
+    <span className="longform__image-grid">
       {children}
-    </div>
+    </span>
   );
 }
 
-Longform.propTypes = {
+ImageGrid.propTypes = {
   children: PropTypes.node.isRequired,
 };
