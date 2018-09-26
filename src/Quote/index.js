@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './longform.scss';
-
-export default function Longform({
+export default function Quote({
   children,
 }) {
   return (
-    <div className="longform">
+    <span className="longform__quote">
       {children}
-    </div>
+    </span>
   );
 }
 
-Longform.propTypes = {
+Quote.propTypes = {
   children: PropTypes.node.isRequired,
 };

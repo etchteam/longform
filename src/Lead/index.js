@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './longform.scss';
-
-export default function Longform({
+export default function Lead({
   children,
 }) {
   return (
-    <div className="longform">
+    <span className="longform__lead">
       {children}
-    </div>
+    </span>
   );
 }
 
-Longform.propTypes = {
+Lead.propTypes = {
   children: PropTypes.node.isRequired,
 };

@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './longform.scss';
-
-export default function Longform({
+export default function Dropcap({
   children,
 }) {
   return (
-    <div className="longform">
+    <span className="longform__dropcap">
       {children}
-    </div>
+    </span>
   );
 }
 
-Longform.propTypes = {
+Dropcap.propTypes = {
   children: PropTypes.node.isRequired,
 };
