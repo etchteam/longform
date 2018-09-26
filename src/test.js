@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import Longform from './'
 
-describe('ExampleComponent', () => {
+describe('Longform', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(Longform).toBeTruthy()
   })
 })
