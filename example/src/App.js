@@ -9,7 +9,7 @@ export default class App extends Component {
 
         <p class="lead">Some text about typography.</p>
 
-        <h2>Sections <a href="#">Linked</a></h2>
+        <h2>Sections</h2>
         <p>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</p>
         <p>The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing <code>h2</code> element.</p>
 
@@ -31,7 +31,7 @@ export default class App extends Component {
         <div class="example">
             <p>Dudley was ninety-two, in his second life, and fast approaching time for another rejuvenation. Despite his body having the physical age of a standard fifty-year-old, the prospect of a long degrading campaign within academia was one he regarded with dread. For a supposedly advanced civilization, the Intersolar Commonwearth could be appallingly backward at times, not to mention cruel.</p>
             <p><i>Maybe it won’t be that bad</i>, he told himself. The lie was comforting enough to get him through the rest of the night’s shift.</p>
-            <hr>
+            <hr />
             <p>The Carlton AllLander drove Dudley home just after dawn. Like the astronomer, the vehicle was old and worn, but perfectly capable of doing its job. It had a cheap diesel engine, common enough on a semi-frontier world like Gralmond, although its drive array was a thoroughly modern photoneural processor. With its high suspension and deep-tread tyres it could plough along the dirt track to the observatory in all weather and seasons, including the metre-deep snow of Gralmond’s winters.</p>
         </div>
 
@@ -39,12 +39,14 @@ export default class App extends Component {
         <p>The <code>pre</code> element represents a block of pre-formatted text, in which structure is represented by typographic conventions rather than by elements. Such examples are an e-mail (with paragraphs indicated by blank lines, lists indicated by lines prefixed with a bullet), fragments of computer code (with structure indicated according to the conventions of that language) or displaying <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art. Here’s an example showing the printable characters of <abbr>ASCII</abbr>:</p>
 
         <div class="example">
-            <pre><samp>  ! " # $ % &amp; ' ( ) * + , - . /
-            0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
-            @ A B C D E F G H I J K L M N O
-            P Q R S T U V W X Y Z [ \ ] ^ _
-            ` a b c d e f g h i j k l m n o
-            p q r s t u v w x y z { | } ~</samp></pre>
+            <pre>
+              <samp>
+                1 2 3
+                4 5 6
+                7 8 9
+                  0
+              </samp>
+          </pre>
         </div>
 
         <h3>Blockquotes</h3>
@@ -128,7 +130,7 @@ export default class App extends Component {
         <p>Figures are usually used to refer to images:</p>
         <div class="example">
             <figure>
-                <img src="/images/tech.jpg" alt="Example image">
+                <img src="/images/tech.jpg" alt="Example image" />
                 <figcaption>
                     This is a placeholder image, with supporting caption.
                 </figcaption>
@@ -137,9 +139,9 @@ export default class App extends Component {
         <p>Here, a part of a poem is marked up using figure:</p>
         <div class="example">
             <figure>
-                <p>‘Twas brillig, and the slithy toves<br>
-                Did gyre and gimble in the wabe;<br>
-                All mimsy were the borogoves,<br>
+                <p>‘Twas brillig, and the slithy toves<br />
+                Did gyre and gimble in the wabe;<br />
+                All mimsy were the borogoves,<br />
                 And the mome raths outgrabe.</p>
                 <figcaption>
                     <cite>Jabberwocky</cite> (first verse). Lewis Carroll, 1832-98
@@ -186,7 +188,7 @@ export default class App extends Component {
         <h3>Strikethrough</h3>
         <p>The <code>s</code> element is used to represent content that is no longer accurate or relevant. When indicating document edits i.e., marking a span of text as having been removed from a document, use the <code>del</code> element instead. Example:</p>
         <div class="example">
-            <p><s>Recommended retail price: £3.99 per bottle</s><br><strong>Now selling for just £2.99 a bottle!</strong></p>
+            <p><s>Recommended retail price: £3.99 per bottle</s><br /><strong>Now selling for just £2.99 a bottle!</strong></p>
         </div>
 
         <h3>Citations</h3>
@@ -217,18 +219,6 @@ export default class App extends Component {
         <p>The <code>time</code> element is used to represent either a time on a 24 hour clock, or a precise date in the proleptic Gregorian calendar, optionally with a time and a time-zone offset. Example:</p>
         <div class="example">
             <p>Queen Elizabeth II was proclaimed sovereign of each of the Commonwealth realms on <time datetime="1952-02-6">6</time> and <time datetime="1952-02-7">7 February 1952</time>, after the death of her father, King George VI.</p>
-        </div>
-
-        <h3>Code</h3>
-        <p>The <code>code</code> element is used to represent fragments of computer code. Useful for technology-oriented sites, not so useful otherwise. Example:</p>
-        <div class="example">
-            <p>When you call the <code>activate()</code> method on the <code>robotSnowman</code> object, the eyes glow.</p>
-        </div>
-        <p>Used in conjunction with the <code>pre</code> element:</p>
-        <div class="example">
-            <pre><code>function getJelly() {
-            &nbsp;&nbsp;&nbsp;&nbsp;echo $aDeliciousSnack;
-            }</code></pre>
         </div>
 
         <h3>Variable</h3>
@@ -279,13 +269,6 @@ export default class App extends Component {
         <div class="example">
             <p>She bought <del datetime="2005-05-30T13:00:00">two</del> <ins datetime="2005-05-30T13:00:00">five</ins> pairs of shoes.</p>
         </div>
-
-        <h2 id="tables">Tabular data</h2>
-        <p>Tables should be used when displaying tabular data. The <code>thead</code>, <code>tfoot</code> and <code>tbody</code> elements enable you to group rows within each a table.</p>
-        <p>If you use these elements, you must use every element. They should appear in this order: <code>thead</code>, <code>tfoot</code> and <code>tbody</code>, so that browsers can render the foot before receiving all the data. You must use these tags within the table element.</p>
-
-
-
       </Longform>
     );
   }
