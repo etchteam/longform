@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import Longform from 'longform'
+import Longform from 'longform';
 
 export default class App extends Component {
   render () {
@@ -100,6 +100,6 @@ export default class App extends Component {
           connected devices, the time has come for us to evolve beyond the page.
         </p>
       </Longform>
-    )
+    );
   }
 }
