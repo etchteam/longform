@@ -1,7 +1,7 @@
-import Longform from './'
+import Longform from '.';
 
 describe('Longform', () => {
   it('is truthy', () => {
-    expect(Longform).toBeTruthy()
-  })
-})
+    expect(Longform).toBeTruthy();
+  });
+});
