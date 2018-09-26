@@ -1,21 +1,19 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
+export default class Longform extends Component {
   static propTypes = {
-    text: PropTypes.string
+    children: PropTypes.node
   }
 
   render() {
     const {
-      text
+      children
     } = this.props
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
+      <div className='longform'>
+        {children}
       </div>
     )
   }
