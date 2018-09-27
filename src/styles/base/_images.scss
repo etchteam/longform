@@ -1,9 +1,30 @@
 //
-// Longform Lists
+// Longform Images
 // -------------------------
 
 img,
 svg {
   display: block;
   max-width: 100%;
+}
+
+.longform-image {
+
+  &--full-width {
+    left: 50%;
+    margin: 5% -50vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+
+    img,
+    svg {
+      max-width: auto;
+      width: 100%;
+    }
+
+    .longform-image__caption {
+      text-align: center;
+    }
+  }
 }

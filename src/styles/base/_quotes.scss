@@ -5,7 +5,7 @@
 blockquote,
 figure p {
   border-left: 1em solid $longform-highlight-background;
-  font-family: inherit;
+  font-family: $longform-quotes-font;
   font-style: italic;
   padding-left: $longform-spacing-horizontal;
 }

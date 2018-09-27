@@ -44,7 +44,7 @@ h4,
 h5,
 h6 {
   color: inherit;
-  font-family: inherit;
+  font-family: $longform-headings-font;
   font-weight: bold;
   line-height: 1.25;
   margin: 0;
@@ -90,6 +90,12 @@ a {
 p {
   font-weight: normal;
   line-height: inherit;
+
+  &:first-of-type::first-letter {
+    float: left;
+    font-size: 2em;
+    padding: .25em;
+  }
 
   a {
     margin: -.5em;
@@ -169,25 +175,8 @@ mark {
   margin: -.25em 0;
 }
 
-pre,
-code,
-samp {
-  background: $longform-muted-background;
-  font-family: monospace;
-  line-height: $longform-line-height;
-}
-
-kbd {
-  background: #fff;
-  border: 1px solid currentColor;
-  display: inline-block;
-  font-family: sans-serif;
-  letter-spacing: .1em;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
 pre {
+  background: $longform-muted-background;
   border-radius: $longform-border-radius;
   padding: $longform-spacing-vertical / 2 $longform-spacing-horizontal;
   white-space: pre;
@@ -199,8 +188,25 @@ samp,
 kbd {
   border-radius: $longform-border-radius;
   font-size: .875em;
-  margin: -.25em 0;
-  padding: .25em .5em;
+  line-height: 1;
+  padding: .125em .5em .25em;
+  position: relative;
+  top: -.075em;
+}
+
+code,
+samp {
+  background: $longform-muted-background;
+  font-family: monospace;
+}
+
+kbd {
+  background: #fff;
+  border: 1px solid currentColor;
+  display: inline-block;
+  font-family: sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
 small {
