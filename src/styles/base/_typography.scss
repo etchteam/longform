@@ -169,31 +169,6 @@ mark {
   margin: -.25em 0;
 }
 
-<<<<<<< 2c3557ede83977965b1b9b7850303d1a46a80aec
-  pre,
-  code,
-  kbd,
-  samp {
-    background: $longform-muted-background;
-    font-family: monospace;
-    line-height: $longform-line-height;
-  }
-
-  pre {
-    border-radius: $longform-border-radius;
-    padding: $longform-spacing-vertical $longform-spacing-horizontal;
-    white-space: pre;
-    word-wrap: break-word;
-  }
-
-  code,
-  samp,
-  kbd {
-    border-radius: $longform-border-radius;
-    margin: -.25em 0;
-    padding: .25em;
-  }
-=======
 pre,
 code,
 samp {
@@ -227,7 +202,6 @@ kbd {
   margin: -.25em 0;
   padding: .25em .5em;
 }
->>>>>>> Shapez
 
 small {
   font-size: $longform-font-small;
