@@ -1,3 +1,46 @@
+$logo-width: 25px;
+
 body {
-  color: #f66;
+  color: #444;
+}
+
+header,
+footer {
+  padding: 2.5%;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+menu {
+  align-self: flex-end;
+}
+
+.logo {
+
+  svg {
+    width: $logo-width;
+
+    @media screen and (min-width: 1024px) {
+      width: $logo-width * 2;
+    }
+  }
+}
+
+.hero {
+  padding: 5vw;
+  text-align: center;
+
+  &__title {
+    font-size: 10vw;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 5vw;
+    margin: 0;
+  }
 }
