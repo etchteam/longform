@@ -21,7 +21,7 @@ export default function App() {
       <p>The header above is an <code>h5</code> element, which may be used for any form of page-level header which falls below the <code>h4</code> header in a document hierarchy.</p>
       <h6>Sixth-Level Header <a href="#">Linked</a></h6>
       <p>The header above is an <code>h6</code> element, which may be used for any form of page-level header which falls below the <code>h5</code> header in a document hierarchy.</p>
-
+      <img src="cover-work.jpg" />
       <h2 id="grouping">Grouping content</h2>
       <h3>Paragraphs</h3>
       <p>All paragraphs are wrapped in <code>p</code> tags. Additionally, <code>p</code> elements can be wrapped with a <code>blockquote</code> element <em>if the <code>p</code> element is indeed a quote</em>. Historically, <code>blockquote</code> has been used purely to force indents, but this is now achieved using CSS. Reserve <code>blockquote</code> for quotes.</p>

@@ -1,11 +1,14 @@
-@import 'base/variables';
-@import 'base/typography';
-@import 'base/images';
+.longform {
+  @import 'base/variables';
+  @import 'base/typography';
+  @import 'base/lists';
+  @import 'base/images';
 
-@import '../components/Dropcap/dropcap';
-@import '../components/ImageFullWidth/image-full-width';
-@import '../components/ImageGrid/image-grid';
-@import '../components/ImageInline/image-inline';
-@import '../components/ImageOutset/image-outset';
-@import '../components/Lead/lead';
-@import '../components/Quote/quote';
+  @import '../components/Dropcap/dropcap';
+  @import '../components/ImageFullWidth/image-full-width';
+  @import '../components/ImageGrid/image-grid';
+  @import '../components/ImageInline/image-inline';
+  @import '../components/ImageOutset/image-outset';
+  @import '../components/Lead/lead';
+  @import '../components/Quote/quote';
+}
