@@ -5,9 +5,9 @@ export default function ImageInline({
   children,
 }) {
   return (
-    <span className="longform__image-inline">
+    <div className="longform__image-inline">
       {children}
-    </span>
+    </div>
   );
 }
 

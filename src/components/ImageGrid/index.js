@@ -5,9 +5,9 @@ export default function ImageGrid({
   children,
 }) {
   return (
-    <span className="longform__image-grid">
+    <div className="longform__image-grid">
       {children}
-    </span>
+    </div>
   );
 }
 

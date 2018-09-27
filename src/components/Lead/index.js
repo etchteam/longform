@@ -5,9 +5,9 @@ export default function Lead({
   children,
 }) {
   return (
-    <span className="longform__lead">
+    <p className="longform__lead">
       {children}
-    </span>
+    </p>
   );
 }
 

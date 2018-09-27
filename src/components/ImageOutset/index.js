@@ -5,9 +5,9 @@ export default function ImageOutset({
   children,
 }) {
   return (
-    <span className="longform__image-outset">
+    <div className="longform__image-outset">
       {children}
-    </span>
+    </div>
   );
 }
 

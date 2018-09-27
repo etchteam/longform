@@ -5,9 +5,9 @@ export default function Quote({
   children,
 }) {
   return (
-    <span className="longform__quote">
+    <blockquote className="longform__quote">
       {children}
-    </span>
+    </blockquote>
   );
 }
 

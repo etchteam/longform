@@ -5,9 +5,9 @@ export default function ImageFullWidth({
   children,
 }) {
   return (
-    <span className="longform__image-full-width">
+    <div className="longform__image-full-width">
       {children}
-    </span>
+    </div>
   );
 }
 
