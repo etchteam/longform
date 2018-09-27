@@ -1,22 +1,22 @@
 .longform {
   color: inherit;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 16px;
   line-height: $longform-line-height;
   margin: 0 auto;
-  max-width: 40em;
+  max-width: 45em;
   padding: 5%;
 
   @media screen and (min-width: $longform-breakpoint-sm) {
-    font-size: 16px;
+    font-size: 1.125em;
   }
 
   @media screen and (min-width: $longform-breakpoint-md) {
-    font-size: 18px;
+    font-size: 1.25em;
   }
 
   @media screen and (min-width: $longform-breakpoint-xl) {
-    font-size: 20px;
+    font-size: 1.5em;
   }
 
   // Vertical Spacing Stacks
@@ -239,20 +239,11 @@
 
   pre,
   code,
+  kbd,
   samp {
     background: $longform-muted-background;
     font-family: monospace;
     line-height: $longform-line-height;
-  }
-
-  kbd {
-    background: #fff;
-    border: 1px solid currentColor;
-    display: inline-block;
-    font-family: sans-serif;
-    letter-spacing: .1em;
-    line-height: 1;
-    text-transform: uppercase;
   }
 
   pre {
@@ -266,9 +257,8 @@
   samp,
   kbd {
     border-radius: $longform-border-radius;
-    font-size: .875em;
     margin: -.25em 0;
-    padding: .25em .5em;
+    padding: .25em;
   }
 
   small {
