@@ -21,5 +21,8 @@
 
     // A jsx extension is not required for files containing jsx
     "react/jsx-filename-extension": 0,
+
+    // Hash links are fine we don't care for this project
+    "jsx-a11y/href-no-hash": "off",
   }
 }

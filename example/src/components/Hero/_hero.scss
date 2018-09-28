@@ -1,0 +1,15 @@
+.hero {
+  padding: 5vw;
+  text-align: center;
+
+  &__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 10vw;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 5vw;
+    margin: 0;
+  }
+}

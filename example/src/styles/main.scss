@@ -1,57 +1,7 @@
-$logo-width: 25px;
+@import 'variables';
 
-body {
-  color: #444;
-  font-family: sans-serif;
-  margin: 0;
-}
+@import 'base/typography';
+@import 'base/structure';
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Martel', serif;
-}
-
-header,
-footer {
-  padding: 2.5%;
-}
-
-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-menu {
-  align-self: flex-end;
-}
-
-.logo {
-  svg {
-    width: $logo-width;
-
-    @media screen and (min-width: 1024px) {
-      width: $logo-width * 2;
-    }
-  }
-}
-
-.hero {
-  padding: 5vw;
-  text-align: center;
-
-  &__title {
-    font-family: 'Playfair Display', serif;
-    font-size: 10vw;
-    margin: 0;
-  }
-
-  &__subtitle {
-    font-size: 5vw;
-    margin: 0;
-  }
-}
+@import '../components/Hero/hero';
+@import '../components/Logo/logo';

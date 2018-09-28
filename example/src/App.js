@@ -1,28 +1,21 @@
 import React from 'react';
+import Longform from 'longform';
+
 import './styles/main.scss';
 
-import Longform from 'longform';
+import Hero from './components/Hero';
+import Logo from './components/Logo';
 
 export default function App() {
   return [
     <header key="header">
-      <a href="/" className="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30">
-          <title>Longform</title>
-          <g>
-            <path d="M12 2V0H0v2h6.5zM12 6V4H0v2h6.5zM12 10V8H0v2h6.5zM12 14v-2H0v2h6.5zM12 18v-2H0v2h6.5zM12.5 20H0v2h24v-2h-3.5zM12.5 24H0v2h24v-2h-3.5zM12.5 28H0v2h24v-2h-3.5zM26 8v2h12V8h-5.5zM26 12v2h12v-2h-5.5zM38.5 4H26v2h24V4h-5.5zM44.5 0H26v2h24V0zM26 16v2h12v-2h-5.5zM26 20v2h12v-2h-5.5zM26 24v2h12v-2h-5.5zM26 28v2h12v-2h-5.5zM40 12v6h8v-6h-4.4z"/>
-          </g>
-        </svg>
-      </a>
+      <Logo />
       <menu>
         <a href="github.com/etch-team/longform">Github</a>
       </menu>
     </header>,
     <main key="main">
-      <div className="hero">
-        <h1 className="hero__title">LongForm</h1>
-        <p className="hero__subtitle">Styles for your content.</p>
-      </div>
+      <Hero title="Longform" subtitle="Styles for your content." />
       <Longform>
         <Longform.Lead>
           The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.
