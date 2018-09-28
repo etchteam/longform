@@ -1,0 +1,10 @@
+&__dropcap {
+  &:first-letter {
+    float: left;
+    font-family: serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0 .125em 0 0;
+  }
+}
