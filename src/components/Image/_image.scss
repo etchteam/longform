@@ -1,0 +1,20 @@
+&__image {
+  img,
+  svg {
+    max-width: auto;
+    width: 100%;
+  }
+
+  &-caption {
+    text-align: center;
+  }
+
+  // full width
+  &--full-width {
+    left: 50%;
+    margin: 5% -50vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+  }
+}
