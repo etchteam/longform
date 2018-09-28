@@ -5,7 +5,7 @@ import Longform from 'longform';
 
 export default function App() {
   return [
-    <header>
+    <header key="header">
       <a href="/" className="logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30">
           <title>Longform</title>
@@ -18,14 +18,18 @@ export default function App() {
         <a href="github.com/etch-team/longform">Github</a>
       </menu>
     </header>,
-    <main>
+    <main key="main">
       <div className="hero">
         <h1 className="hero__title">LongForm</h1>
         <p className="hero__subtitle">Styles for your content.</p>
       </div>
       <Longform>
-        <Longform.Dropcap>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</Longform.Dropcap>
-        <p>The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing <code>h2</code> element.</p>
+        <Longform.Lead>
+          The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.
+        </Longform.Lead>
+        <Longform.Dropcap>
+          The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing <code>h2</code> element.
+        </Longform.Dropcap>
 
         <h3>Third-Level Header</h3>
         <p>The header above is an <code>h3</code> element, which may be used for any form of page-level header which falls below the <code>h2</code> header in a document hierarchy.</p>
@@ -45,7 +49,7 @@ export default function App() {
 
         <h3>Horizontal rule</h3>
         <p>The <code>hr</code> element represents a paragraph-level thematic break, e.g. a scene change in a story, or a transition to another topic within a section of a reference book. The following extract from <cite>Pandora’s Star</cite> by Peter F. Hamilton shows two paragraphs that precede a scene change and the paragraph that follows it:</p>
-        <div class="example">
+        <div className="example">
             <p>Dudley was ninety-two, in his second life, and fast approaching time for another rejuvenation. Despite his body having the physical age of a standard fifty-year-old, the prospect of a long degrading campaign within academia was one he regarded with dread. For a supposedly advanced civilization, the Intersolar Commonwearth could be appallingly backward at times, not to mention cruel.</p>
             <p><i>Maybe it won’t be that bad</i>, he told himself. The lie was comforting enough to get him through the rest of the night’s shift.</p>
             <hr />
@@ -55,7 +59,7 @@ export default function App() {
         <h3>Pre-formatted text</h3>
         <p>The <code>pre</code> element represents a block of pre-formatted text, in which structure is represented by typographic conventions rather than by elements. Such examples are an e-mail (with paragraphs indicated by blank lines, lists indicated by lines prefixed with a bullet), fragments of computer code (with structure indicated according to the conventions of that language) or displaying <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art. Here’s an example showing the printable characters of <abbr>ASCII</abbr>:</p>
 
-        <div class="example">
+        <div className="example">
             <pre>
               <samp>
                 1 2 3
@@ -68,7 +72,7 @@ export default function App() {
 
         <h3>Blockquotes</h3>
         <p>The <code>blockquote</code> element represents a section that is being quoted from another source.</p>
-        <div class="example">
+        <div className="example">
             <blockquote cite="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">
                 <p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
             </blockquote>
@@ -76,7 +80,7 @@ export default function App() {
 
         <h3>Ordered list</h3>
         <p>The <code>ol</code> element denotes an ordered list, and various numbering schemes are available through the CSS (including 1,2,3… a,b,c… i,ii,iii… and so on). Each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items within the list (as you may have guessed, <code>li</code> stands for list item).</p>
-        <div class="example">
+        <div className="example">
             <ol>
                 <li>This is an ordered list.</li>
                 <li>
@@ -92,7 +96,7 @@ export default function App() {
 
         <h3>Unordered list</h3>
         <p>The <code>ul</code> element denotes an unordered list (ie. a list of loose items that don’t require numbering, or a bulleted list). Again, each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items. Here is an example list showing the constituent parts of the British Isles:</p>
-        <div class="example">
+        <div className="example">
             <ul>
                 <li>
                     United Kingdom of Great Britain and Northern Ireland:
@@ -115,7 +119,7 @@ export default function App() {
             </ul>
         </div>
         <p>Sometimes we may want each list item to contain block elements, typically a paragraph or two.</p>
-        <div class="example">
+        <div className="example">
             <ul>
                 <li>
                     <p>The British Isles is an archipelago consisting of the two large islands of Great Britain and Ireland, and many smaller surrounding islands.</p>
@@ -131,7 +135,7 @@ export default function App() {
 
         <h3>Definition list</h3>
         <p>The <code>dl</code> element is for another type of list called a definition list. Instead of list items, the content of a <code>dl</code> consists of <code>dt</code> (Definition Term) and <code>dd</code> (Definition description) pairs. Though it may be called a “definition list”, <code>dl</code> can apply to other scenarios where a parent/child relationship is applicable. For example, it may be used for marking up dialogues, with each <code>dt</code> naming a speaker, and each <code>dd</code> containing his or her words.</p>
-        <div class="example">
+        <div className="example">
             <dl>
                 <dt>This is a term.</dt>
                 <dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
@@ -145,7 +149,7 @@ export default function App() {
 
         <h3>Figures</h3>
         <p>Figures are usually used to refer to images:</p>
-        <div class="example">
+        <div className="example">
           <figure>
             <img src="cover-work.jpg" alt="Example" />
             <figcaption>
@@ -154,7 +158,7 @@ export default function App() {
           </figure>
         </div>
         <p>Here, a part of a poem is marked up using figure:</p>
-        <div class="example">
+        <div className="example">
             <figure>
                 <p>‘Twas brillig, and the slithy toves<br />
                 Did gyre and gimble in the wabe;<br />
@@ -166,7 +170,7 @@ export default function App() {
             </figure>
         </div>
         <p>When you  wish to cite the source of a quote, you should do so using a figure also:</p>
-        <div class="example">
+        <div className="example">
             <blockquote cite="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">
                 <p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
             </blockquote>
@@ -180,115 +184,115 @@ export default function App() {
 
         <h3>Links and anchors</h3>
         <p>The <code>a</code> element is used to hyperlink text, be that to another page, a named fragment on the current page or any other location on the web. Example:</p>
-        <div class="example">
+        <div className="example">
             <p><a href="/">Go to the home page</a> or <a href="#banner">return to the top of this page</a>.</p>
         </div>
 
         <h3>Stressed emphasis</h3>
         <p>The <code>em</code> element is used to denote text with stressed emphasis, i.e., something you’d pronounce differently. Where italicizing is required for stylistic differentiation, the <code>i</code> element may be preferable. Example:</p>
-        <div class="example">
+        <div className="example">
             <p>You simply <em>must</em> try the negitoro maki!</p>
         </div>
 
         <h3>Strong importance</h3>
         <p>The <code>strong</code> element is used to denote text with strong importance. Where bolding is used for stylistic differentiation, the <code>b</code> element may be preferable. Example:</p>
-        <div class="example">
+        <div className="example">
             <p><strong>Don’t</strong> stick nails in the electrical outlet.</p>
         </div>
 
         <h3>Small print</h3>
         <p>The <small>small</small> element is used to represent disclaimers, caveats, legal restrictions, or copyrights (commonly referred to as ‘small print’). It can also be used for attributions or satisfying licensing requirements. Example:</p>
-        <div class="example">
+        <div className="example">
             <p><small>Copyright © 1922-2011 Acme Corporation. All Rights Reserved.</small></p>
         </div>
 
         <h3>Strikethrough</h3>
         <p>The <code>s</code> element is used to represent content that is no longer accurate or relevant. When indicating document edits i.e., marking a span of text as having been removed from a document, use the <code>del</code> element instead. Example:</p>
-        <div class="example">
+        <div className="example">
             <p><s>Recommended retail price: £3.99 per bottle</s><br /><strong>Now selling for just £2.99 a bottle!</strong></p>
         </div>
 
         <h3>Citations</h3>
         <p>The <code>cite</code> element is used to represent the title of a work (e.g. a book, essay, poem, song, film, TV show, sculpture, painting, musical, exhibition, etc). This can be a work that is being quoted or referenced in detail (i.e. a citation), or it can just be a work that is mentioned in passing. Example:</p>
-        <div class="example">
+        <div className="example">
             <p><cite>Universal Declaration of Human Rights</cite>, United Nations, December 1948. Adopted by General Assembly resolution 217 A (III).</p>
         </div>
 
         <h3>Inline quotes</h3>
         <p>The <code>q</code> element is used for quoting text inline. Example showing nested quotations:</p>
-        <div class="example">
+        <div className="example">
             <p>John said, <q>I saw Lucy at lunch, she told me <q>Mary wants you to get some ice cream on your way home</q>. I think I will get some at Ben and Jerry’s, on Gloucester Road.</q></p>
         </div>
 
         <h3>Definition</h3>
         <p>The <code>dfn</code> element is used to highlight the first use of a term. The <code>title</code> attribute can be used to describe the term. Example:</p>
-        <div class="example">
+        <div className="example">
             <p>Bob’s <dfn title="Dog">canine</dfn> mother and <dfn title="Horse">equine</dfn> father sat him down and carefully explained that he was an <dfn title="A mutation that combines two or more sets of chromosomes from different species">allopolyploid</dfn> organism.</p>
         </div>
 
         <h3>Abbreviation</h3>
         <p>The <code>abbr</code> element is used for any abbreviated text, whether it be acronym, initialism, or otherwise. Generally, it’s less work and useful (enough) to mark up only the first occurrence of any particular abbreviation on a page, and ignore the rest. Any text in the <code>title</code> attribute will appear when the user’s mouse hovers the abbreviation (although notably, this does not work in Internet Explorer for Windows). Example abbreviations:</p>
-        <div class="example">
+        <div className="example">
             <p><abbr title="British Broadcasting Corportation">BBC</abbr>, <abbr title="HyperText Markup Language">HTML</abbr>, and <abbr title="Staffordshire">Staffs.</abbr></p>
         </div>
 
         <h3>Time</h3>
         <p>The <code>time</code> element is used to represent either a time on a 24 hour clock, or a precise date in the proleptic Gregorian calendar, optionally with a time and a time-zone offset. Example:</p>
-        <div class="example">
-            <p>Queen Elizabeth II was proclaimed sovereign of each of the Commonwealth realms on <time datetime="1952-02-6">6</time> and <time datetime="1952-02-7">7 February 1952</time>, after the death of her father, King George VI.</p>
+        <div className="example">
+            <p>Queen Elizabeth II was proclaimed sovereign of each of the Commonwealth realms on <time dateTime="1952-02-6">6</time> and <time dateTime="1952-02-7">7 February 1952</time>, after the death of her father, King George VI.</p>
         </div>
 
         <h3>Variable</h3>
         <p>The <code>var</code> element is used to denote a variable in a mathematical expression or programming context, but can also be used to indicate a placeholder where the contents should be replaced with your own value. Example:</p>
-        <div class="example">
+        <div className="example">
             <p>If there are <var>n</var> pipes leading to the ice cream factory then I expect at <em>least</em> <var>n</var> flavours of ice cream to be available for purchase!</p>
         </div>
 
         <h3>Sample output</h3>
         <p>The <code>samp</code> element is used to represent (sample) output from a program or computing system. Useful for technology-oriented sites, not so useful otherwise. Example:</p>
-        <div class="example">
+        <div className="example">
             <p>The computer said <samp>Too much cheese in tray two</samp> but I didn’t know what that meant.</p>
         </div>
 
         <h3>Keyboard entry</h3>
         <p>The <code>kbd</code> element is used to denote user input (typically via a keyboard, although it may also be used to represent other input methods, such as voice commands). Example:</p><p>
-        </p><div class="example">
+        </p><div className="example">
             <p>To take a screenshot on your Mac, press <kbd>⌘ Cmd</kbd> + <kbd>⇧ Shift</kbd> + <kbd>3</kbd>.</p>
         </div>
 
         <h3>Superscript and subscript text</h3>
         <p>The <code>sup</code> element represents a superscript and the sub element represents a <code>sub</code>. These elements must be used only to mark up typographical conventions with specific meanings, not for typographical presentation. As a guide, only use these elements if their absence would change the meaning of the content. Example:</p>
-        <div class="example">
+        <div className="example">
             <p>The coordinate of the <var>i</var>th point is (<var>x<sub><var>i</var></sub></var>, <var>y<sub><var>i</var></sub></var>). For example, the 10th point has coordinate (<var>x<sub>10</sub></var>, <var>y<sub>10</sub></var>).</p>
             <p>f(<var>x</var>, <var>n</var>) = log<sub>4</sub><var>x</var><sup><var>n</var></sup></p>
         </div>
 
         <h3>Italicised</h3>
         <p>The <code>i</code> element is used for text in an alternate voice or mood, or otherwise offset from the normal prose. Examples include taxonomic designations, technical terms, idiomatic phrases from another language, the name of a ship or other spans of text whose typographic presentation is typically italicised. Example:</p>
-        <div class="example">
+        <div className="example">
             <p>There is a certain <i lang="fr">je ne sais quoi</i> in the air.</p>
         </div>
 
         <h3>Emboldened</h3>
         <p>The <code>b</code> element is used for text stylistically offset from normal prose without conveying extra importance, such as key words in a document abstract, product names in a review, or other spans of text whose typographic presentation is typically emboldened. Example:</p>
-        <div class="example">
+        <div className="example">
             <p>You enter a small room. Your <b>sword</b> glows brighter. A <b>rat</b> scurries past the corner wall.</p>
         </div>
 
         <h3>Marked or highlighted text</h3>
         <p>The <code>mark</code> element is used to represent a run of text marked or highlighted for reference purposes. When used in a quotation it indicates a highlight not originally present but added to bring the reader’s attention to that part of the text. When used in the main prose of a document, it indicates a part of the document that has been highlighted due to its relevance to the user’s current activity. Example:</p>
-        <div class="example">
+        <div className="example">
             <p>I also have some <mark>kitten</mark>s who are visiting me these days. They’re really cute. I think they like my garden! Maybe I should adopt a <mark>kitten</mark>.</p>
         </div>
 
         <h3 id="edits">Edits</h3>
-        <p>The <code>del</code> element is used to represent deleted or retracted text which still must remain on the page for some reason. Meanwhile its counterpart, the <code>ins</code> element, is used to represent inserted text. Both <code>del</code> and <code>ins</code> have a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example inserted text and usage:</p>
-        <div class="example">
-            <p>She bought <del datetime="2005-05-30T13:00:00">two</del> <ins datetime="2005-05-30T13:00:00">five</ins> pairs of shoes.</p>
+        <p>The <code>del</code> element is used to represent deleted or retracted text which still must remain on the page for some reason. Meanwhile its counterpart, the <code>ins</code> element, is used to represent inserted text. Both <code>del</code> and <code>ins</code> have a <code>dateTime</code> attribute which allows you to include a timestamp directly in the element. Example inserted text and usage:</p>
+        <div className="example">
+            <p>She bought <del dateTime="2005-05-30T13:00:00">two</del> <ins dateTime="2005-05-30T13:00:00">five</ins> pairs of shoes.</p>
         </div>
       </Longform>
     </main>,
-    <footer>
+    <footer key="footer">
       &copy; <a href="http://etch.co">Etch</a>
     </footer>
   ];

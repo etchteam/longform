@@ -1,5 +1,5 @@
 &__dropcap {
-  &:first-letter {
+  &::first-letter {
     float: left;
     font-family: serif;
     font-size: 3.5em;

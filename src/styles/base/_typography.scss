@@ -113,11 +113,6 @@ h4 {font-size: 1.5em;}
 h5 {font-size: 1.25em;}
 h6 {font-size: 1em;}
 
-.lead {
-  font-size: 1.5em;
-  line-height: 1.25em;
-}
-
 
 // Rules
 // -------------------------
@@ -134,9 +129,11 @@ hr {
 // Text-level
 // -------------------------
 
-abbr[title] {
-  border-bottom: 1px dotted $longform-border-color;
-  cursor: help;
+abbr {
+  &[title] {
+    border-bottom: 1px dotted $longform-border-color;
+    cursor: help;
+  }
 }
 
 b,
