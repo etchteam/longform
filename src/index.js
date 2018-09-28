@@ -14,7 +14,9 @@ export default function Longform({
 }) {
   return (
     <div className="longform">
-      {children}
+      <div className="longform__inner">
+        {children}
+      </div>
     </div>
   );
 }

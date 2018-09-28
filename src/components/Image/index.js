@@ -13,7 +13,7 @@ export default function Image({
     longform__image: true,
     'longform__image--full-width': fullWidth,
     'longform__image--inline': inline,
-    'longform__image--outset': outset !== '',
+    [`longform__image--outset-${outset}`]: outset !== '',
   });
 
   return (

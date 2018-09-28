@@ -1,12 +1,19 @@
 
 & {
+  box-sizing: border-box;
   color: inherit;
   font-family: inherit;
   font-size: 16px;
   line-height: $longform-line-height;
   margin: 0 auto;
-  max-width: 45em;
-  padding: 5%;
+  max-width: $longform-max-width;
+
+  &__inner {
+    // We need the padding to be inside an inner component
+    // in order to be sure of it's size as it is percentage
+    // by default and that is taken from the parent content width.
+    padding: $longform-padding;
+  }
 }
 
 @media screen and (min-width: $longform-breakpoint-sm) {

@@ -175,6 +175,9 @@ export default function App() {
         <p>There are a number of inline <abbr title="HyperText Markup Language">HTML</abbr> elements you may use anywhere within other elements.</p>
 
         <h3>Links and anchors</h3>
+        <Longform.Image outset="left">
+          <img src="http://placehold.it/300x300?text=Left" alt="Left outset" />
+        </Longform.Image>
         <p>The <code>a</code> element is used to hyperlink text, be that to another page, a named fragment on the current page or any other location on the web. Example:</p>
         <div className="example">
             <p><a href="/">Go to the home page</a> or <a href="#banner">return to the top of this page</a>.</p>
@@ -239,7 +242,9 @@ export default function App() {
         <div className="example">
             <p>If there are <var>n</var> pipes leading to the ice cream factory then I expect at <em>least</em> <var>n</var> flavours of ice cream to be available for purchase!</p>
         </div>
-
+        <Longform.Image outset="right">
+          <img src="http://placehold.it/300x300?text=Right" alt="Right outset" />
+        </Longform.Image>
         <h3>Sample output</h3>
         <p>The <code>samp</code> element is used to represent (sample) output from a program or computing system. Useful for technology-oriented sites, not so useful otherwise. Example:</p>
         <div className="example">
