@@ -282,6 +282,13 @@ export default function App() {
             <p>I also have some <mark>kitten</mark>s who are visiting me these days. They’re really cute. I think they like my garden! Maybe I should adopt a <mark>kitten</mark>.</p>
         </div>
 
+        <Longform.ImageGrid>
+          <img src="http://placehold.it/150x150?text=Grid" alt="Grid item" />
+          <img src="http://placehold.it/150x150?text=Grid" alt="Grid item" />
+          <img src="http://placehold.it/150x150?text=Grid" alt="Grid item" />
+          <img src="http://placehold.it/150x150?text=Grid" alt="Grid item" />
+        </Longform.ImageGrid>
+
         <h3 id="edits">Edits</h3>
         <p>The <code>del</code> element is used to represent deleted or retracted text which still must remain on the page for some reason. Meanwhile its counterpart, the <code>ins</code> element, is used to represent inserted text. Both <code>del</code> and <code>ins</code> have a <code>dateTime</code> attribute which allows you to include a timestamp directly in the element. Example inserted text and usage:</p>
         <div className="example">

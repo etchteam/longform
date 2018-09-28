@@ -6,7 +6,14 @@ export default function ImageGrid({
 }) {
   return (
     <div className="longform__image-grid">
-      {children}
+      {React.Children.map(children, (child, i) => (
+        <div
+          key={i}
+          className="longform__image-grid-item"
+        >
+          {child}
+        </div>
+      ))}
     </div>
   );
 }
