@@ -93,8 +93,11 @@ p {
 
   &:first-of-type::first-letter {
     float: left;
-    font-size: 2em;
-    padding: .25em;
+    font-family: serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0 .125em 0 0;
   }
 
   a {

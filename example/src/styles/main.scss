@@ -2,7 +2,7 @@ $logo-width: 25px;
 
 body {
   color: #444;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: sans-serif;
   margin: 0;
 }
 
@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Martel', serif;
 }
 
 header,
@@ -46,6 +46,7 @@ menu {
   text-align: center;
 
   &__title {
+    font-family: 'Playfair Display', serif;
     font-size: 10vw;
     margin: 0;
   }

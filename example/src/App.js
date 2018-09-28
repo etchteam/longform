@@ -24,7 +24,6 @@ export default function App() {
         <p className="hero__subtitle">Styles for your content.</p>
       </div>
       <Longform>
-        <h2>Sections</h2>
         <p>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</p>
         <p>The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing <code>h2</code> element.</p>
 
