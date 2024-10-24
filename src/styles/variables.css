@@ -1,0 +1,6 @@
+:root {
+  --diamond-font-family: "Roboto Flex", -apple-system, system-ui,
+    blinkmacsystemfont, roboto, helvetica, arial, sans-serif;
+  --diamond-font-family-heading: "Roboto Serif", -apple-system, system-ui,
+    blinkmacsystemfont, roboto, helvetica, arial, sans-serif;
+}

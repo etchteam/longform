@@ -5,3 +5,18 @@ description: It takes time and effort to write good content. Let’s make sure i
 ---
 
 <h1>Longform</h1>
+
+<ul>
+  <li>
+    <a href="/intro">Intro - What long-form content is</a>
+  </li>
+  <li>
+    <a href="/style">Style - What’s included</a>
+  </li>
+  <li>
+    <a href="/code">Code - How to use it</a>
+  </li> 
+  <li>
+    <a href="/goldilocks">Goldilocks</a>
+  </li>
+</ul>

@@ -1,0 +1,122 @@
+.long-form {
+  --long-form-base-unit: 16px;
+  --long-form-spacing: 16px;
+  --long-form-spacing-large: 24px;
+
+  --long-form-line-height-small: 1.5;
+  --long-form-font-size-small: 0.75;
+
+  --long-form-line-height: 1.5;
+  --long-form-font-size: 0.875;
+
+  --long-form-font-size-h1: 2;
+  --long-form-line-height-h1: 1.125;
+
+  --long-form-font-size-h2: 1.5;
+  --long-form-line-height-h2: 1.125;
+
+  --long-form-font-size-h3: 1.25;
+  --long-form-line-height-h3: 1.125;
+
+  --long-form-font-size-h4: 1;
+  --long-form-line-height-h4: 1.5;
+
+  --long-form-font-size-h5: 0.875;
+  --long-form-line-height-h5: 1.5;
+
+  --long-form-font-size-h6: 0.75;
+  --long-form-line-height-h6: 1.5;
+
+  font-size: calc(var(--long-form-base-unit) * var(--long-form-font-size));
+  line-height: var(--long-form-line-height);
+  text-wrap: pretty;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: var(--long-form-spacing) 0;
+    text-wrap: pretty;
+  }
+
+  h1 {
+    font-size: calc(var(--long-form-base-unit) * var(--long-form-font-size-h1));
+    line-height: var(--long-form-line-height-h1);
+  }
+
+  h2 {
+    font-size: calc(var(--long-form-base-unit) * var(--long-form-font-size-h2));
+    line-height: var(--long-form-line-height-h2);
+  }
+
+  h3 {
+    font-size: calc(var(--long-form-base-unit) * var(--long-form-font-size-h3));
+    line-height: var(--long-form-line-height-h3);
+  }
+
+  h4 {
+    font-size: calc(var(--long-form-base-unit) * var(--long-form-font-size-h4));
+    line-height: var(--long-form-line-height-h4);
+  }
+
+  h5 {
+    font-size: calc(var(--long-form-base-unit) * var(--long-form-font-size-h5));
+    line-height: var(--long-form-line-height-h5);
+  }
+
+  h6 {
+    font-size: calc(var(--long-form-base-unit) * var(--long-form-font-size-h6));
+    line-height: var(--long-form-line-height-h6);
+  }
+
+  p,
+  ul,
+  ol,
+  blockquote {
+    font-size: calc(var(--long-form-base-unit) * var(--long-form-font-size));
+    line-height: var(--long-form-line-height);
+    margin: var(--long-form-spacing) 0;
+
+    + p,
+    + ul,
+    + ol,
+    + blockquote {
+      margin-top: var(--long-form-spacing-large);
+    }
+  }
+
+  ul,
+  ol {
+    padding: 0 0 0 var(--long-form-spacing-large);
+  }
+
+  blockquote {
+    border-left: 2px solid;
+    padding: 0 0 0 1em;
+  }
+
+  small {
+    font-size: calc(
+      var(--long-form-base-unit) * var(--long-form-font-size-small)
+    );
+    line-height: var(--long-form-line-height-small);
+  }
+
+  @media (width >= 768px) {
+    --long-form-base-unit: 18px;
+  }
+
+  @media (width >= 1024px) {
+    --long-form-base-unit: 20px;
+  }
+
+  @media (width >= 1280px) {
+    --long-form-base-unit: 24px;
+  }
+}

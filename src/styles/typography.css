@@ -1,0 +1,13 @@
+body {
+  font-weight: var(--diamond-font-weight-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--diamond-font-family-heading);
+  font-weight: var(--diamond-font-weight-black);
+}
