@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title @text="title">Longform - It takes time and effort to write good content. Let’s make sure it looks good too.</title>
+    <meta name="description" :content="description">
+
+    <!--- Bundled base styles --->
+    <link rel="stylesheet" href="../../node_modules/@etchteam/diamond-ui/diamond-ui.css" webc:bucket="styles">
+    <link rel="stylesheet" :href="getBundleFileUrl('css', 'styles')" webc:keep>
+    <!--- Bundled component styles --->
+    <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep>
+  </head>
+  <body>
+    <diamond-app>
+      <main @raw="content"></main>
+    </diamond-app>
+
+    <!--- Bundled component scripts --->
+    <script :src="getBundleFileUrl('js')" webc:keep></script>
+  </body>
+</html>
