@@ -21,7 +21,9 @@
     <diamond-app>
       <diamond-section padding="md">
         <diamond-wrap gutter="md">
-          <img src="/assets/images/logo.svg" alt="Longform logo" width="34" height="22" />
+          <a href="/">
+            <img src="/assets/images/logo.svg" alt="Longform logo" width="34" height="22" />
+          </a>
         </diamond-wrap>
       </diamond-section>
       <diamond-section padding="fluid">
