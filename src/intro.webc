@@ -1,0 +1,66 @@
+---
+layout: default.webc
+title: Intro - What long-form content is
+---
+
+<template webc:type="11ty" 11ty:type="md">
+# Intro: What long-form content is
+
+<aside>
+<img src="https://www.notion.so/icons/info-alternate_gray.svg" alt="https://www.notion.so/icons/info-alternate_gray.svg" width="40px" />
+
+The following guidance is for people who already have some content and want to improve how it is displayed. If you’re looking for tips on how to write good content the internet is full of advice.
+</aside>
+
+Long-form is a type of content that provides in-depth analysis, detailed explanations, or story-telling. Text formats typically include blog posts, magazine articles, white papers, investigative journalism, trend reports, and interviews. 
+
+Although there’s no exact benchmark, most people agree that content over 1,000 words can be considered “long-form”.
+
+Classification aside, if you have a lot of content, then you need to make sure it’s presented properly. More content means more to digest, which requires more effort and time from readers.
+
+## How to style long-form content
+
+To make long-form content easier to consume, more engaging, and more enjoyable to read, we need to consider the following details:
+
+**Hierarchy –** Structure
+
+- clear contrast between levels of heading – typographic scale
+- dividers to break content up at logical points.
+- inset or outset information to
+
+**Readability –** Comfort
+
+- line height, spacing, contrast
+- font sizes
+
+**Meaning** - Understanding
+
+Where possible, content should be presented in the most relevant way
+
+- If someone is speaking, use quotation marks, or blockquotes
+- For a process, timeline or set of steps – use numbered bullet points
+
+**Typographic Voice** – Personality
+
+You know when you pick up a book for the first time, and thumb through it to see what the text looks like, well this is a bit like that. 
+
+- The size and style of your type create the first impression of your content.
+- choose a typeface to suit the theme covered by your content. Is it serious or lighthearted?
+
+## What styles do you need
+
+Styles for base HTML elements – think WYSIWYG
+
+- Headings `h1, h2, h3, h4, h5, h6`
+- Paragraphs `p`
+- Emphasis `b, strong, em, i`
+- Semantics `abbr, dfn, cite, address, small, sub, sup, code`
+- Lists `ul,ol,dl`
+- Quotes `blockquote, q`
+- Formatting `mark, del, ins, pre`
+- Links `a`
+- Graphics `img, picture, SVG, canvas`
+- Tables `table, caption, th,`
+- Other media `audio, video, iframe,`
+- Divider `hr`
+</template>

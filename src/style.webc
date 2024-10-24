@@ -1,0 +1,261 @@
+---
+layout: default.webc
+title: Style - What’s included 
+description: LongForm is a CSS package of well-considered styles that will pop your content into a solid shape.
+---
+
+<template webc:type="11ty" 11ty:type="md">
+# Style: What’s included
+
+> LongForm is a CSS package of well-considered styles that will pop your content into a solid shape.
+> 
+
+# Hierarchy
+
+---
+
+## Typescale
+
+To make long-form content easier to read, it needs a clear visual hierarchy. Using a type scale will apply scientific rationale to your font-sizes to achieve visual harmony.
+
+<aside>
+<img src="https://www.notion.so/icons/bookmark-outline_gray.svg" alt="https://www.notion.so/icons/bookmark-outline_gray.svg" width="40px" />
+
+To learn more about the science involved, read Spencer Mortensen’s [article on typographic scales](https://spencermortensen.com/articles/typographic-scale/)
+
+</aside>
+
+## Base font-size
+
+- The first thing to decide is the size of the text at the base level. This will be applied to most of the text content and is usually displayed in paragraphs.
+- LongForm uses `16px` for the base unit size as its easier to achieve round numbers when multiplying and dividing this figure – helping to avoid sub-pixels.
+
+### Start with mobile
+
+- The optimal font size for small screens is usually **12–16 pixels**.
+- This is considered mobile-friendly by search engines and is easier to read than smaller or larger fonts.
+- LongForm uses `14px` on small screens with a font-size of `0.875em`
+
+### Scale up for larger screens
+
+- As screens get larger, the overall font-size should increase too.
+- When sitting in front of a desktop monitor, there’s a greater distance between the screen and our eyes.
+- Increasing the font-size helps to keep the content comfortable to read.
+- LongForm is set to scale up 1.5 times from mobile to desktop.
+
+## Heading sizes
+
+- HTML has six levels of heading `h1, h2, h3, h4, h5, h6`
+- In real-world use, most long-form content only uses 3 or 4 heading levels.
+- LongForm has been optimised for 4 levels of heading, but covers all 6.
+
+<aside>
+<img src="https://www.notion.so/icons/calculator_gray.svg" alt="https://www.notion.so/icons/calculator_gray.svg" width="40px" />
+
+Check the [font-sizing formula used by LongForm](https://docs.google.com/spreadsheets/d/16WDcHiZDGofmG7n7RjLQRmjfRGdVLmXcA_u8gm8S1Yg/edit?gid=0#gid=0)
+
+</aside>
+
+<aside>
+<img src="https://www.notion.so/icons/calculator_gray.svg" alt="https://www.notion.so/icons/calculator_gray.svg" width="40px" />
+
+Useful tool: [Material Design Typescale](https://m2.material.io/design/typography/the-type-system.html#type-scale)
+
+</aside>
+
+# Readability
+
+---
+
+## Line-height
+
+The amount of space between each line of text affects how comfortable it is to read through chunk of content.
+
+### Body
+
+- For paragraphs, values between 1.3 and 1.5 are typically recommended for good readability, although this varies with font face and line length
+- A11y: According to W3 Web Accessibility Initiative, you should ensure line height is at least 1.5 x the font size
+- LongForm uses `1.5`
+
+### Headings
+
+- It's uncommon for headings to break on to two lines, so line-height is less of an issue for readability.
+- A small line height is more suitable for large font sizes to keep things more compact.
+- LongForm uses `1.125`
+
+## Line-length
+
+The optimal line length for readability is **between 45 and 75 characters per line**. Lines that are too long or too short can make text difficult to read:
+
+- Too long and it’s harder to move your eyes to the beginning of the next line
+- Too short and it disrupts the flow of reading and the text feels disjointed
+- LongForm sets the `max-width` to 800px / 50em, but you can adjust this to suit your project.
+
+## Color contrast
+
+The text and background `color` combinations used on your project have an affect on how easy it is to read your content. 
+
+- Contrast isn't just for people with impaired vision, it's also for anyone who's using a device in mixed lighting conditions, or even when using a poor or dirty display.
+- LongForm is set to inherit the color from your project.
+- Please ensure your content passes AA contrast with a ration of 5 or more.
+
+# **Meaning**
+
+---
+
+> With the bulk of the styles taken care of, it's time to think about text-level presentation.
+> 
+
+## Emphasis
+
+We're all familiar with these styling staples. Use them wisely to best effect.
+
+### Bold and Strong
+
+### Italic and Emphasis
+
+## Lists
+
+Lists are a great tool to break up large chunks of text and make content easier to scan and digest, especially on a digital medium where readers quickly scroll up and down and can be gone in seconds.
+
+LongForm includes styles for:
+
+- Bullet list `ul`
+- Numbered lists `ol`
+- Description list `dl`
+
+**Next level list**
+
+- Custom bullets and numbers
+- Alternative layouts
+
+## Quotes
+
+### Inline quotes
+
+The `q` element can be used to style quotes inside paragraphs, without disrupting the text flow.
+
+- It's common for italics to be used to style inline quotes, but the `q` element applies `“”` quote marks for you, and makes your content more semantic. You should use it!
+- LongForm *italicises* inline quotes to help them stand out.
+
+### Block quotes
+
+To create more contrast between the main content and a `blockquote`, LongForm uses:
+
+- the same font-family as headings `$lf-headings-font-family`
+- a larger font-size `1.5em`
+- Inset spacing and a vertical border
+
+## Semantics
+
+If you want to go the extra mile, then applying text-level semantics to your content will give it maximum meaning.
+
+### Abbreviations and Definitions
+
+If you're covering a niche or complicated topic, then your project is likely going to be using some terms or acronyms that need a short explanation.
+
+In the HTML for your content you can wrap words in `abbr` or `dfn` to recognise it as keyword.
+
+You can then add a `title` attribute to include a description.
+
+EXAMPLE 
+
+- LongForm adds a subtle border to elements with a title. When users hover
+
+### Subscript and Superscript
+
+Whether it's chemicals H20 or  temperatures 150°F, it looks so much better when those characters are tucked away at the top or bottom.
+
+### Cite and Address
+
+If you quote someone else in your content, make sure you credit the author. 
+
+Put the author name in a `cite` and if you have a link their website or online profile, that should be wrapped in `address`
+
+- LongForm includes subtle styles for these, but you can make them your own.
+
+### Time
+
+If you include a date or time in your content it should be contained in a `time` element.
+
+- LongForm applies a style that's influenced by a traditional calendar, using a red border to highlight the information.
+- You can adapt this to suit your project or remove the styles to return `time` to the same appearance as default text.
+
+## Technical formatting
+
+If your content covers science, mathematics or technology, then there’s a good chance you’ll need to use these semantic elements.
+
+- Code
+- Var
+- Kbd
+- Samp
+- Pre
+
+LongForm uses:
+
+- a mono space font family
+- a background color
+- a border radius
+
+## Editing
+
+If your content has a long shelf life and changes over time, you may want to display which words have been updated.
+
+LongForm uses subtle color-coding to highlight these elements and give them more meaning.
+
+- Marked `mark` - highlight some text
+- Inserted `ins` - show added/valid text
+- Deleted `del` - show removed/invalid
+
+## Tabular data
+
+LongForm includes some styles to handle basic tabular data. 
+
+Example table
+
+<aside>
+🗑️
+
+You can remove these styles if your project doesn't involve tables.
+
+</aside>
+
+## Graphics
+
+Written content is always best served with some photos, illustrations or dataviz. Afterall, *a picture paints a thousand words.*
+
+Images
+
+SVGs
+
+Canvas
+
+## Other media
+
+Occasionally LongForm incorporates other types of media such as `audio` or `video`. 
+
+Sometimes, entire web pages need to be embedded within an `iframe`.
+
+LongForm includes styles for the default media players used by browsers.
+
+# Personality
+
+---
+
+> This is where it gets personal and subjective. Luckily, your site will already have an existing brand with selected typefaces and specific ways to use them.
+> 
+
+## Typefaces and font families
+
+- LongForm assigns a font-family to the base and headings
+- If your content involves `code` then you’ll also need to define your preferred mono-space font-family.
+
+If you’re working on a new project or a redesign then you have the fun job of choosing which fonts you want to use.
+
+Otherwise, you can update the variables in LongForm to match your the existing fonts used in your project.
+
+- `$lf-base-font-family`
+- `$lf-heading-font-family`
+- `$lf-code-font-family`
+
+</template>

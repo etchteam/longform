@@ -1,0 +1,14 @@
+---
+layout: default.webc
+title: Code - How to use it
+---
+
+<template webc:type="11ty" 11ty:type="md">
+
+# Code: How to use it
+
+## LongForm styles – just add content
+
+Grab the CSS and add `.long-form` to your content container to pop things into shape.
+
+</template>
