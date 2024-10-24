@@ -6,6 +6,11 @@ description: It takes time and effort to write good content. Let’s make sure i
 
 <h1>Longform</h1>
 
+<p class="diamond-text-font-heading diamond-text-size-h2">
+  <strong class="diamond-text-weight-black"></strong>It takes time and effort to write good content.</strong><br /> 
+  <span class="diamond-text-weight-body">Let’s make sure it looks good too.</span>
+</p>
+
 <ul>
   <li>
     <a href="/intro">Intro - What long-form content is</a>

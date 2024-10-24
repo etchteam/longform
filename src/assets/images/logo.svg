@@ -1,0 +1,21 @@
+<svg width="500" height="340" viewBox="0 0 500 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M120 60V40H0V60H120Z" fill="#333333"/>
+<path d="M120 100V80H0V100H120Z" fill="#333333"/>
+<path d="M120 140V120H0V140H120Z" fill="#333333"/>
+<path d="M120 180V160H0V180H120Z" fill="#333333"/>
+<path d="M120 220V200H0V220H120Z" fill="#333333"/>
+<path d="M0 240V260H240V240H0Z" fill="#333333"/>
+<path d="M0 280V300H240V280H0Z" fill="#333333"/>
+<path d="M0 320V340H240V320H0Z" fill="#333333"/>
+<path d="M260 120V140H380V120H260Z" fill="#333333"/>
+<path d="M260 160V180H380V160H260Z" fill="#333333"/>
+<path d="M260 80V100H500V80H260Z" fill="#333333"/>
+<path d="M260 40V60H500V40H260Z" fill="#333333"/>
+<path d="M260 200V220H380V200H260Z" fill="#333333"/>
+<path d="M260 240V260H380V240H260Z" fill="#333333"/>
+<path d="M260 280V300H380V280H260Z" fill="#333333"/>
+<path d="M260 320V340H380V320H260Z" fill="#333333"/>
+<path d="M400 160V220H500V160H400Z" fill="#333333"/>
+<path d="M120 20V0H0V20H120Z" fill="#333333"/>
+<path d="M260 0V20H500V0H260Z" fill="#333333"/>
+</svg>

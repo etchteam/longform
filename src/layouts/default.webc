@@ -19,6 +19,11 @@
   </head>
   <body>
     <diamond-app>
+      <diamond-section padding="md">
+        <diamond-wrap gutter="md">
+          <img src="/assets/images/logo.svg" alt="Longform logo" width="34" height="22" />
+        </diamond-wrap>
+      </diamond-section>
       <diamond-section padding="fluid">
         <diamond-wrap size="lg" gutter="md">
           <main @raw="content" class="long-form"></main>

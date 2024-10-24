@@ -3,4 +3,8 @@
     blinkmacsystemfont, roboto, helvetica, arial, sans-serif;
   --diamond-font-family-heading: "Roboto Serif", -apple-system, system-ui,
     blinkmacsystemfont, roboto, helvetica, arial, sans-serif;
+
+  --color-pink: #f6e6e6;
+
+  --diamond-theme-background: var(--color-pink);
 }
