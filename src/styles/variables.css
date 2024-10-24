@@ -4,7 +4,11 @@
   --diamond-font-family-heading: "Roboto Serif", -apple-system, system-ui,
     blinkmacsystemfont, roboto, helvetica, arial, sans-serif;
 
+  --color-white: #fff;
   --color-pink: #f6e6e6;
+  --color-blue: #e6f6f6;
+  --color-link: #225e5e;
 
   --diamond-theme-background: var(--color-pink);
+  --diamond-theme-link-color: #225e5e;
 }

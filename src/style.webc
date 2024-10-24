@@ -10,80 +10,104 @@ description: LongForm is a CSS package of well-considered styles that will pop y
 > LongForm is a CSS package of well-considered styles that will pop your content into a solid shape.
 > 
 
-# Hierarchy
+## Hierarchy
 
 ---
 
-## Typescale
+### Typescale
 
 To make long-form content easier to read, it needs a clear visual hierarchy. Using a type scale will apply scientific rationale to your font-sizes to achieve visual harmony.
 
-<aside>
-<img src="https://www.notion.so/icons/bookmark-outline_gray.svg" alt="https://www.notion.so/icons/bookmark-outline_gray.svg" width="40px" />
+<diamond-card class="theme-info">
+  <diamond-grid gap="sm">
+    <diamond-grid-item>
+      <diamond-icon>
+        <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path xmlns="http://www.w3.org/2000/svg" d="M4 4C4 2.89543 4.89543 2 6 2H18C19.1046 2 20 2.89543 20 4V21C20 21.3746 19.7907 21.7178 19.4576 21.8892C19.1245 22.0606 18.7236 22.0315 18.4188 21.8137L12 17.2289L5.58124 21.8137C5.27642 22.0315 4.87549 22.0606 4.54242 21.8892C4.20935 21.7178 4 21.3746 4 21V4ZM18 4L6 4V19.0568L11.4188 15.1863C11.7665 14.9379 12.2335 14.9379 12.5812 15.1863L18 19.0568V4Z" fill="#0D0D0D"></path>
+        </svg>
+      </diamond-icon>
+    </diamond-grid-item>
+    <diamond-grid-item grow shrink>
+      To learn more about the science involved, read Spencer Mortensen’s <a href="https://spencermortensen.com/articles/typographic-scale/">article on typographic scales</a>
+    </diamond-grid-item>  
+  </diamond-grid>
+</diamond-card>
 
-To learn more about the science involved, read Spencer Mortensen’s [article on typographic scales](https://spencermortensen.com/articles/typographic-scale/)
-
-</aside>
-
-## Base font-size
+### Base font-size
 
 - The first thing to decide is the size of the text at the base level. This will be applied to most of the text content and is usually displayed in paragraphs.
 - LongForm uses `16px` for the base unit size as its easier to achieve round numbers when multiplying and dividing this figure – helping to avoid sub-pixels.
 
-### Start with mobile
+#### Start with mobile
 
 - The optimal font size for small screens is usually **12–16 pixels**.
 - This is considered mobile-friendly by search engines and is easier to read than smaller or larger fonts.
 - LongForm uses `14px` on small screens with a font-size of `0.875em`
 
-### Scale up for larger screens
+#### Scale up for larger screens
 
 - As screens get larger, the overall font-size should increase too.
 - When sitting in front of a desktop monitor, there’s a greater distance between the screen and our eyes.
 - Increasing the font-size helps to keep the content comfortable to read.
 - LongForm is set to scale up 1.5 times from mobile to desktop.
 
-## Heading sizes
+### Heading sizes
 
 - HTML has six levels of heading `h1, h2, h3, h4, h5, h6`
 - In real-world use, most long-form content only uses 3 or 4 heading levels.
 - LongForm has been optimised for 4 levels of heading, but covers all 6.
 
-<aside>
-<img src="https://www.notion.so/icons/calculator_gray.svg" alt="https://www.notion.so/icons/calculator_gray.svg" width="40px" />
+<diamond-card class="theme-info diamond-spacing-bottom-md">
+  <diamond-grid gap="sm">
+    <diamond-grid-item>
+      <diamond-icon>
+        <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path xmlns="http://www.w3.org/2000/svg" d="M9 5C8.44772 5 8 5.44772 8 6C8 6.55228 8.44772 7 9 7C9.55228 7 10 6.55228 10 6C10 5.44772 9.55228 5 9 5ZM6.17071 5C6.58254 3.83481 7.69378 3 9 3C10.3062 3 11.4175 3.83481 11.8293 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H11.8293C11.4175 8.16519 10.3062 9 9 9C7.69378 9 6.58254 8.16519 6.17071 7H5C4.44772 7 4 6.55228 4 6C4 5.44772 4.44772 5 5 5H6.17071ZM15 11C14.4477 11 14 11.4477 14 12C14 12.5523 14.4477 13 15 13C15.5523 13 16 12.5523 16 12C16 11.4477 15.5523 11 15 11ZM12.1707 11C12.5825 9.83481 13.6938 9 15 9C16.3062 9 17.4175 9.83481 17.8293 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H17.8293C17.4175 14.1652 16.3062 15 15 15C13.6938 15 12.5825 14.1652 12.1707 13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H12.1707ZM9 17C8.44772 17 8 17.4477 8 18C8 18.5523 8.44772 19 9 19C9.55228 19 10 18.5523 10 18C10 17.4477 9.55228 17 9 17ZM6.17071 17C6.58254 15.8348 7.69378 15 9 15C10.3062 15 11.4175 15.8348 11.8293 17H19C19.5523 17 20 17.4477 20 18C20 18.5523 19.5523 19 19 19H11.8293C11.4175 20.1652 10.3062 21 9 21C7.69378 21 6.58254 20.1652 6.17071 19H5C4.44772 19 4 18.5523 4 18C4 17.4477 4.44772 17 5 17H6.17071Z" fill="#0D0D0D"></path>
+        </svg>
+      </diamond-icon>
+    </diamond-grid-item>
+    <diamond-grid-item grow shrink>
+      Check the <a href="https://docs.google.com/spreadsheets/d/16WDcHiZDGofmG7n7RjLQRmjfRGdVLmXcA_u8gm8S1Yg/edit?gid=0#gid=0">font-sizing formula used by LongForm</a>
+    </diamond-grid-item>  
+  </diamond-grid>
+</diamond-card>
 
-Check the [font-sizing formula used by LongForm](https://docs.google.com/spreadsheets/d/16WDcHiZDGofmG7n7RjLQRmjfRGdVLmXcA_u8gm8S1Yg/edit?gid=0#gid=0)
+<diamond-card class="theme-info">
+  <diamond-grid gap="sm">
+    <diamond-grid-item>
+      <diamond-icon>
+        <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path xmlns="http://www.w3.org/2000/svg" d="M4 4C4 2.89543 4.89543 2 6 2H18C19.1046 2 20 2.89543 20 4V21C20 21.3746 19.7907 21.7178 19.4576 21.8892C19.1245 22.0606 18.7236 22.0315 18.4188 21.8137L12 17.2289L5.58124 21.8137C5.27642 22.0315 4.87549 22.0606 4.54242 21.8892C4.20935 21.7178 4 21.3746 4 21V4ZM18 4L6 4V19.0568L11.4188 15.1863C11.7665 14.9379 12.2335 14.9379 12.5812 15.1863L18 19.0568V4Z" fill="#0D0D0D"></path>
+        </svg>
+      </diamond-icon>
+    </diamond-grid-item>
+    <diamond-grid-item grow shrink>
+      Useful tool: <a href="https://m2.material.io/design/typography/the-type-system.html#type-scale">Material Design Typescale</a>
+    </diamond-grid-item>  
+  </diamond-grid>
+</diamond-card>
 
-</aside>
-
-<aside>
-<img src="https://www.notion.so/icons/calculator_gray.svg" alt="https://www.notion.so/icons/calculator_gray.svg" width="40px" />
-
-Useful tool: [Material Design Typescale](https://m2.material.io/design/typography/the-type-system.html#type-scale)
-
-</aside>
-
-# Readability
+## Readability
 
 ---
 
-## Line-height
+### Line-height
 
 The amount of space between each line of text affects how comfortable it is to read through chunk of content.
 
-### Body
+#### Body
 
 - For paragraphs, values between 1.3 and 1.5 are typically recommended for good readability, although this varies with font face and line length
 - A11y: According to W3 Web Accessibility Initiative, you should ensure line height is at least 1.5 x the font size
 - LongForm uses `1.5`
 
-### Headings
+#### Headings
 
 - It's uncommon for headings to break on to two lines, so line-height is less of an issue for readability.
 - A small line height is more suitable for large font sizes to keep things more compact.
 - LongForm uses `1.125`
 
-## Line-length
+### Line-length
 
 The optimal line length for readability is **between 45 and 75 characters per line**. Lines that are too long or too short can make text difficult to read:
 
@@ -91,7 +115,7 @@ The optimal line length for readability is **between 45 and 75 characters per l
 - Too short and it disrupts the flow of reading and the text feels disjointed
 - LongForm sets the `max-width` to 800px / 50em, but you can adjust this to suit your project.
 
-## Color contrast
+### Color contrast
 
 The text and background `color` combinations used on your project have an affect on how easy it is to read your content. 
 
@@ -99,22 +123,22 @@ The text and background `color` combinations used on your project have an affect
 - LongForm is set to inherit the color from your project.
 - Please ensure your content passes AA contrast with a ration of 5 or more.
 
-# **Meaning**
+## **Meaning**
 
 ---
 
 > With the bulk of the styles taken care of, it's time to think about text-level presentation.
 > 
 
-## Emphasis
+### Emphasis
 
 We're all familiar with these styling staples. Use them wisely to best effect.
 
-### Bold and Strong
+#### Bold and Strong
 
-### Italic and Emphasis
+#### Italic and Emphasis
 
-## Lists
+### Lists
 
 Lists are a great tool to break up large chunks of text and make content easier to scan and digest, especially on a digital medium where readers quickly scroll up and down and can be gone in seconds.
 
@@ -129,16 +153,16 @@ LongForm includes styles for:
 - Custom bullets and numbers
 - Alternative layouts
 
-## Quotes
+### Quotes
 
-### Inline quotes
+#### Inline quotes
 
 The `q` element can be used to style quotes inside paragraphs, without disrupting the text flow.
 
 - It's common for italics to be used to style inline quotes, but the `q` element applies `“”` quote marks for you, and makes your content more semantic. You should use it!
 - LongForm *italicises* inline quotes to help them stand out.
 
-### Block quotes
+#### Block quotes
 
 To create more contrast between the main content and a `blockquote`, LongForm uses:
 
@@ -146,11 +170,11 @@ To create more contrast between the main content and a `blockquote`, LongForm us
 - a larger font-size `1.5em`
 - Inset spacing and a vertical border
 
-## Semantics
+### Semantics
 
 If you want to go the extra mile, then applying text-level semantics to your content will give it maximum meaning.
 
-### Abbreviations and Definitions
+#### Abbreviations and Definitions
 
 If you're covering a niche or complicated topic, then your project is likely going to be using some terms or acronyms that need a short explanation.
 
@@ -162,11 +186,11 @@ EXAMPLE
 
 - LongForm adds a subtle border to elements with a title. When users hover
 
-### Subscript and Superscript
+#### Subscript and Superscript
 
 Whether it's chemicals H20 or  temperatures 150°F, it looks so much better when those characters are tucked away at the top or bottom.
 
-### Cite and Address
+#### Cite and Address
 
 If you quote someone else in your content, make sure you credit the author. 
 
@@ -174,14 +198,14 @@ Put the author name in a `cite` and if you have a link their website or online p
 
 - LongForm includes subtle styles for these, but you can make them your own.
 
-### Time
+#### Time
 
 If you include a date or time in your content it should be contained in a `time` element.
 
 - LongForm applies a style that's influenced by a traditional calendar, using a red border to highlight the information.
 - You can adapt this to suit your project or remove the styles to return `time` to the same appearance as default text.
 
-## Technical formatting
+### Technical formatting
 
 If your content covers science, mathematics or technology, then there’s a good chance you’ll need to use these semantic elements.
 
@@ -197,7 +221,7 @@ LongForm uses:
 - a background color
 - a border radius
 
-## Editing
+### Editing
 
 If your content has a long shelf life and changes over time, you may want to display which words have been updated.
 
@@ -207,20 +231,28 @@ LongForm uses subtle color-coding to highlight these elements and give them more
 - Inserted `ins` - show added/valid text
 - Deleted `del` - show removed/invalid
 
-## Tabular data
+### Tabular data
 
 LongForm includes some styles to handle basic tabular data. 
 
 Example table
 
-<aside>
-🗑️
+<diamond-card class="theme-info">
+  <diamond-grid gap="sm">
+    <diamond-grid-item>
+      <diamond-icon>
+        <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path xmlns="http://www.w3.org/2000/svg" d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398ZM10 10C10.5523 10 11 10.4477 11 11V17C11 17.5523 10.5523 18 10 18C9.44772 18 9 17.5523 9 17V11C9 10.4477 9.44772 10 10 10ZM14 10C14.5523 10 15 10.4477 15 11V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V11C13 10.4477 13.4477 10 14 10Z" fill="#0D0D0D"></path>
+        </svg>
+      </diamond-icon>
+    </diamond-grid-item>
+    <diamond-grid-item grow shrink>
+      You can remove these styles if your project doesn't involve tables.
+    </diamond-grid-item>  
+  </diamond-grid>
+</diamond-card>
 
-You can remove these styles if your project doesn't involve tables.
-
-</aside>
-
-## Graphics
+### Graphics
 
 Written content is always best served with some photos, illustrations or dataviz. Afterall, *a picture paints a thousand words.*
 
@@ -230,7 +262,7 @@ SVGs
 
 Canvas
 
-## Other media
+### Other media
 
 Occasionally LongForm incorporates other types of media such as `audio` or `video`. 
 
@@ -238,14 +270,14 @@ Sometimes, entire web pages need to be embedded within an `iframe`.
 
 LongForm includes styles for the default media players used by browsers.
 
-# Personality
+## Personality
 
 ---
 
 > This is where it gets personal and subjective. Luckily, your site will already have an existing brand with selected typefaces and specific ways to use them.
 > 
 
-## Typefaces and font families
+### Typefaces and font families
 
 - LongForm assigns a font-family to the base and headings
 - If your content involves `code` then you’ll also need to define your preferred mono-space font-family.

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/variables.css" webc:bucket="styles">
     <link rel="stylesheet" href="../styles/fonts.css" webc:bucket="styles">
     <link rel="stylesheet" href="../styles/typography.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/theme.css" webc:bucket="styles">
     <link rel="stylesheet" href="../styles/longform.css" webc:bucket="styles">
     <link rel="stylesheet" :href="getBundleFileUrl('css', 'styles')" webc:keep>
     <!--- Bundled component styles --->

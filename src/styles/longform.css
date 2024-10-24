@@ -27,11 +27,15 @@
   --long-form-font-size-h6: 0.75;
   --long-form-line-height-h6: 1.5;
 
+  --long-form-code-background: #f6f6f6;
+  --long-form-code-border: #e2e2e2;
+  --long-form-code-color: #c01343;
+
   font-size: calc(var(--long-form-base-unit) * var(--long-form-font-size));
   line-height: var(--long-form-line-height);
   text-wrap: pretty;
 
-  :first-child {
+  > :first-child {
     margin-top: 0;
   }
 
@@ -101,11 +105,27 @@
     padding: 0 0 0 1em;
   }
 
-  small {
+  small,
+  code {
     font-size: calc(
       var(--long-form-base-unit) * var(--long-form-font-size-small)
     );
     line-height: var(--long-form-line-height-small);
+  }
+
+  code {
+    background: var(--long-form-code-background);
+    border: 1px solid var(--long-form-code-border);
+    border-radius: 0.25em;
+    color: var(--long-form-code-color);
+    font-family:
+      ui-monospace,
+      SFMono-Regular,
+      Consolas,
+      Liberation Mono,
+      Menlo,
+      monospace;
+    padding: 2px 3px 1px;
   }
 
   @media (width >= 768px) {

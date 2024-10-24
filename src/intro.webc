@@ -6,11 +6,22 @@ title: Intro - What long-form content is
 <template webc:type="11ty" 11ty:type="md">
 # Intro: What long-form content is
 
-<aside>
-<img src="https://www.notion.so/icons/info-alternate_gray.svg" alt="https://www.notion.so/icons/info-alternate_gray.svg" width="40px" />
-
-The following guidance is for people who already have some content and want to improve how it is displayed. If you’re looking for tips on how to write good content the internet is full of advice.
-</aside>
+<diamond-card class="theme-info">
+  <diamond-grid gap="sm">
+    <diamond-grid-item>
+      <diamond-icon>
+        <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path xmlns="http://www.w3.org/2000/svg" d="M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z" fill="#0D0D0D"></path>
+          <path xmlns="http://www.w3.org/2000/svg" d="M12 10C12.5523 10 13 10.4477 13 11V17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17V11C11 10.4477 11.4477 10 12 10Z" fill="#0D0D0D"></path>
+          <path xmlns="http://www.w3.org/2000/svg" d="M13.5 7.5C13.5 8.32843 12.8284 9 12 9C11.1716 9 10.5 8.32843 10.5 7.5C10.5 6.67157 11.1716 6 12 6C12.8284 6 13.5 6.67157 13.5 7.5Z" fill="#0D0D0D"></path>
+        </svg>
+      </diamond-icon>
+    </diamond-grid-item>
+    <diamond-grid-item grow shrink>
+      The following guidance is for people who already have some content and want to improve how it is displayed. If you’re looking for tips on how to write good content the internet is full of advice.
+    </diamond-grid-item>
+  </diamond-grid>
+</diamond-card>
 
 Long-form is a type of content that provides in-depth analysis, detailed explanations, or story-telling. Text formats typically include blog posts, magazine articles, white papers, investigative journalism, trend reports, and interviews. 
 
@@ -22,25 +33,25 @@ Classification aside, if you have a lot of content, then you need to make sure i
 
 To make long-form content easier to consume, more engaging, and more enjoyable to read, we need to consider the following details:
 
-**Hierarchy –** Structure
+### Hierarchy – Structure
 
 - clear contrast between levels of heading – typographic scale
 - dividers to break content up at logical points.
 - inset or outset information to
 
-**Readability –** Comfort
+### Readability – Comfort
 
 - line height, spacing, contrast
 - font sizes
 
-**Meaning** - Understanding
+### Meaning - Understanding
 
 Where possible, content should be presented in the most relevant way
 
 - If someone is speaking, use quotation marks, or blockquotes
 - For a process, timeline or set of steps – use numbered bullet points
 
-**Typographic Voice** – Personality
+### Typographic Voice – Personality
 
 You know when you pick up a book for the first time, and thumb through it to see what the text looks like, well this is a bit like that. 
 
